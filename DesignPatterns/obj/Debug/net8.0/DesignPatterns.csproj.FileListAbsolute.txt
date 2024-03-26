@@ -12,3 +12,4 @@ C:\Users\The user\Desktop\לימודים\DesignPatternsHW\DesignPatterns\DesignP
 C:\Users\The user\Desktop\לימודים\DesignPatternsHW\DesignPatterns\DesignPatterns\obj\Debug\net8.0\DesignPatterns.pdb
 C:\Users\The user\Desktop\לימודים\DesignPatternsHW\DesignPatterns\DesignPatterns\obj\Debug\net8.0\DesignPatterns.genruntimeconfig.cache
 C:\Users\The user\Desktop\לימודים\DesignPatternsHW\DesignPatterns\DesignPatterns\obj\Debug\net8.0\ref\DesignPatterns.dll
+C:\Users\The user\Desktop\לימודים\DesignPatternsHW\DesignPatterns\DesignPatterns\obj\Debug\net8.0\DesignPatterns.sourcelink.json

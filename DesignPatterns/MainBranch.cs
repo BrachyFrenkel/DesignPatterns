@@ -7,15 +7,45 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns;
 public class MainBranch : Branch 
-{ 
-    private MainBranch MainBranchInstance = new MainBranch();
+{
+    static MainBranch instance;
     private MainBranch()
     {
-        this.MainBranchInstance= MainBranchInstance;
+
     }
-    public MainBranch GetMainBranch()
+    public static object locker;
+    static MainBranch()
     {
-        return this.MainBranchInstance; 
+        locker = new object();
     }
 
+    public static MainBranch GetInstance()
+    {
+        if (instance == null)
+        {
+            lock (locker)
+            {
+                if (instance == null)
+                {
+                    instance = new MainBranch();
+                }
+            }
+        }
+        return instance;
+    }
+
+    public override void AddBranchItem()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void Update()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void Clone(Branch branch)
+    {
+        throw new NotImplementedException();
+    }
 }
